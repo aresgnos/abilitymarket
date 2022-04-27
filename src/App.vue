@@ -8,7 +8,7 @@
 
     <div class="header">
       <div class="logo">
-      <h1><a href="#"><img src="./assets/images/logo.jpg" /></a></h1>
+      <a href="#"><img src="./assets/images/logo.jpg" /></a>
       </div>
       <div class="searchbox">
       <input type="text" placeholder="주변에 &ldquo;&nbsp;&rdquo; 할 수 있는 사람?" />
@@ -29,13 +29,6 @@
     <div class="main">
       <router-view></router-view>
     </div>
-    <div class="menu1">menu1</div>
-    <div class="menu2">menu2</div>
-    <div class="menu3">menu3</div>
-    <div class="menu4">menu4</div>
-    <div class="menu5">menu5</div>
-    <div class="menu6">menu6</div>
-    <div class="menu7">menu7</div>
     <div class="footer">footer</div>
   </div>
 </template>
@@ -79,16 +72,15 @@ a {
 }
 
 button {
-  border : 0; outline: 0; background-color: rgba(0,0,0,0);
+  all: unset;;
 }
 
 .container {
-  width : 80%;
+  width : 70%;
   height: 100vh;
   margin : 0 auto;
-  display: grid;
   /* grid-template-columns: 1fr; */
-  grid-template-rows: 40px 90px 500px 350px 350px 350px;
+  /* grid-template-rows: 40px 90px 500px 350px 350px 350px; */
   font-family: "GmarketSansMedium";
   color: #707070;
 }
@@ -98,7 +90,7 @@ button {
   justify-content : flex-end;
   align-content: center;
   text-align: center;
-  margin-top : 10px;
+  margin-top : 20px;
 }
 
 .btn_login {

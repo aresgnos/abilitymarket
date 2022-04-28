@@ -2,7 +2,7 @@
   <div class="container">
 
     <div class="top">
-      <button class="btn_login">로그인</button>
+      <router-link to="/login"><button class="btn_login">로그인</button></router-link>
       <button class="btn_join">회원가입</button>
     </div>
 
@@ -12,8 +12,8 @@
       </div>
       <div class="searchbox">
       <input type="text" placeholder="주변에 &ldquo;&nbsp;&rdquo; 할 수 있는 사람?" />
-      <button type="submit" class="btn_search"><img src="./assets/images/searchicon.png" /></button>
       </div>
+      <button type="submit" class="btn_search"><img src="./assets/images/searchicon.png" /></button>
       <nav>
           <ul class="menu">
             <li><a href="#">나의&nbsp;능력</a></li>
@@ -37,6 +37,8 @@
 
 
 export default {
+   
+
 
   setup() {
 
@@ -72,11 +74,11 @@ a {
 }
 
 button {
-  all: unset;;
+  all: unset;
 }
 
 .container {
-  width : 70%;
+  width : 75%;
   height: 100vh;
   margin : 0 auto;
   /* grid-template-columns: 1fr; */
@@ -91,6 +93,7 @@ button {
   align-content: center;
   text-align: center;
   margin-top : 20px;
+  margin-bottom :10px;
 }
 
 .btn_login {
@@ -119,6 +122,7 @@ button {
 .btn_search {
   width : 35px;
   height : 35px;
+  
 }
 
 .header {
@@ -127,25 +131,31 @@ button {
 }
 
 .header > .logo { width:20%; justify-content: center;}
-.header > .searchbox { flex: 2; justify-content: center;}
-.header > .menu { flex:4; justify-content: center; }
+.header > .searchbox { flex:1; justify-content: center;}
+.header > .btn_search { flex:1; justify-content: center;}
+.header > .menu { flex:1; justify-content: flex-end; }
 
 .menu > li {  
 display: inline-block;
 margin-left: 30px;
-margin-top:15px;}
+font-size: 1rem;
+}
 
 input {
   border-bottom : 2px solid #3476D8;
   border-left: none;
   border-right: none;
   border-top: none;
-  font-size: 1rem;
+  font-size: 17px;
   font-family: 'GmarketSansLight';
   
 }
 input:focus { outline: none; }
 input::placeholder { color : #6797dd; }
+
+.main {
+  margin-top: 20px;
+}
 
 
 

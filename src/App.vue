@@ -11,7 +11,7 @@
       <a href="#"><img src="./assets/images/logo.jpg" /></a>
       </div>
       <div class="searchbox">
-      <input type="text" placeholder="주변에 &ldquo;&nbsp;&rdquo; 할 수 있는 사람?" />
+      <input type="search" placeholder="주변에&ldquo;&nbsp;&rdquo; 할 수 있는 사람?" />
       </div>
       <button type="submit" class="btn_search"><img src="./assets/images/searchicon.png" /></button>
       <nav>
@@ -26,9 +26,9 @@
         </nav>
     </div>
 
-    <div class="main">
+    
       <router-view></router-view>
-    </div>
+    
     <div class="footer">footer</div>
   </div>
 </template>
@@ -37,8 +37,6 @@
 
 
 export default {
-   
-
 
   setup() {
 
@@ -48,6 +46,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
 @font-face {
   font-family: "GmarketSansMedium";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
@@ -84,7 +83,6 @@ button {
   /* grid-template-columns: 1fr; */
   /* grid-template-rows: 40px 90px 500px 350px 350px 350px; */
   font-family: "GmarketSansMedium";
-  color: #707070;
 }
 
 .top {

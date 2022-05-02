@@ -2,11 +2,9 @@
   <div class="logincontainer">
 
     <div class="loginbox">
-		
 		<div class="logobox">
         <a href="#" class="logo"><img src="../assets/images/logo.jpg" /></a>
 		</div>
-
     	<div class="login">
         <input type="text" placeholder="아이디" />
         <input type="password" placeholder="비밀번호" />
@@ -22,13 +20,25 @@
 				<input type="checkbox" /><span>이메일 저장</span>
 			</label>
 			<div class="checklink">
-				<a href="#" class="findpw">비밀번호찾기</a>
-				<a href="#" class="join">회원가입</a>
+				<a href="#" class="findpw">이메일찾기</a>
+				<a href="#" class="join">비밀번호찾기</a>
 			</div>
-		</div>
-	</div>
+    </div>
+
+    <div class="loginbox">
+    <div class="simplelogin">
+        <div class="login"><span>간편 로그인</span></div>
+        <!-- <button type="button" class="btn h50 h40m wfull sns1" onclick="kakaoLogin();"><span class="inner"><span class="icon"></span>카카오톡으로 로그인</span></button></dd>
+        <dd class="mt10 mt10m"><button type="button" class="btn h50 h40m wfull sns2" onclick="naverLogin();"><span class="inner"><span class="icon"></span>네이버로 로그인</span></button></dd>
+        <dd class="mt10 mt10m"><button type="button" class="btn h50 h40m wfull sns3" onclick="facebookLogin();"><span class="inner"><span class="icon"></span>페이스북으로 로그인</span></button></dd>
+                    <dd class="mt10 mt10m"><button type="button" class="btn h50 h40m wfull sns4" onclick="appleLogin();"><span class="inner"><span class="icon"></span>Apple로 로그인</span></button></dd>
+    </dl> -->
     
+    </div>
+    </div>
+    </div>
   </div>
+  
 </template>
 
 <script>
@@ -76,6 +86,17 @@ export default {
 	margin-left: auto;
 	font-size: 14px;
 	color: #e27b04;
+}
+
+.simplelogin {
+  font-size: 14px;
+}
+
+.loginline {
+    font-size: 13px;
+    line-height: 52px;
+    color: #808080;
+    position: relative;
 }
 
 .btn_login {

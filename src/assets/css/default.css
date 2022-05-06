@@ -1,0 +1,13 @@
+ul, li {
+    list-style : none;
+}
+  
+a {
+    text-decoration: none;
+    line-height: 100%;
+    color: #535353;;
+}
+
+li {
+    display: inline-block;
+}

@@ -1,11 +1,14 @@
 <template>
-
+<section id = "maincontainer">
+    <article class="mainslide">
     <div class="slide">
         <vueper-slides>
         <vueper-slide v-for="tmp in state.slides" :key="tmp" :image="tmp.image" />
         </vueper-slides>
     </div>
+    </article>
     
+    <article class="category1">
      <div class="bestcategory">
         <h3>베스트&nbsp;카테고리</h3>
         <nav>
@@ -29,10 +32,12 @@
         </ul>
         </nav>
     </div>
-
     <div class="hr1"></div>
+    </article>
+
+    <article class="category2">
     <h3 style="margin-top:30px;">도와주세요</h3><br />
-    <div class="d-flex justify-space-around mb-6" style="margin-top:-30px;">
+    <div class="d-flex justify-space-around mb-6" style="margin-top:-40px;">
     <div class="helpme" v-for="n in 4" :key="n" >
     <ul class="helpmelist">
         <li>
@@ -53,7 +58,7 @@
                 </div>
 
                 <div class="location">
-                <div class="location-item"><v-img src="../assets/images/location.png" style="width:20px;height:20px;margin-bottom:32px;"  /></div>
+                <div class="location-item"><v-img src="../assets/images/location.png" style="width:20px;height:20px;margin-bottom:40px;"  /></div>
                 <div class="address"><p>부산시 부산진구</p></div>
                 </div>
             </a>  
@@ -61,15 +66,15 @@
     </ul>
   </div>
     </div>
-        <h3>도와줄게요</h3><br />
-        <div class="d-flex justify-space-around mb-6" style="margin-top:-30px;">
+    <h3>도와줄게요</h3><br />
+    <div class="d-flex justify-space-around mb-6" style="margin-top:-40px;">
     <div class="helpme" v-for="n in 4" :key="n" >
     <ul class="helpmelist">
         <li>
             <a href="#">
             <div class="profile">
             <div class="profile-item"><v-img src="../assets/images/user.png" style="width:25px;height:25px;"/></div>
-            <p class="nickname">그린데이즈</p>
+            <p class="nickname">루피</p>
             </div>
             </a>
             <a href="#" class="imghover">
@@ -79,43 +84,50 @@
                 </div>
                 <div class="profilebottom">
                 <div class="check"><v-img src="../assets/images/check.png" style="width:30px;height:30px;"/></div>
-                <div class="profilebottom-item"><p>사진 보정하는 능력을 삽니다.</p></div>
+                <div class="profilebottom-item"><p>가구 수리 조립합니다.</p></div>
                 </div>
 
                 <div class="location">
-                <div class="location-item"><v-img src="../assets/images/location.png" style="width:20px;height:20px;margin-bottom:32px;"  /></div>
-                <div class="address"><p>부산시 부산진구</p></div>
+                <div class="location-item"><v-img src="../assets/images/location.png" style="width:20px;height:20px;margin-bottom:40px;"  /></div>
+                <div class="address"><p>부산시 연제구</p></div>
                 </div>
             </a>  
         </li>
     </ul>
-  </div>
+     </div>
     </div>
-       
-    
     <div class="hr1"></div>
+</article>
+    
+    <article class="category3">
     <div class="keyword" style="margin-top:30px;">
         <h3>인기키워드</h3><br />
-       
+        <div class="keywordbox">
+            <v-img src="../assets/images/keyword.png" />
+            
+        </div>
+
     </div>
+    </article>
 
     <div class="hr1"></div>
-    <div class="keyword" style="margin-top:30px;">
+    <div class="tip" style="margin-top:30px;">
         <h3>능력자의 팁</h3><br />
        
     </div>
 
     <div class="hr1"></div>
-    <div class="keyword" style="margin-top:30px;">
+    <div class="story" style="margin-top:30px;">
         <h3>사연</h3><br />
        
     </div>
 
     <div class="hr1"></div>
-    <div class="story" style="margin-top:30px;">
+    <div class="rank" style="margin-top:30px;">
         <h3>이달의 랭킹</h3><br />
        
     </div>
+</section>
    
 </template>
 
@@ -190,7 +202,7 @@ h3 {
 }
 
 .hr1 {
-    margin-top: 50px;
+    margin-top: 30px;
     height: 2px;
     background-color: #f2f2f2;
 }
@@ -265,7 +277,7 @@ h3 {
     color: #707070;
     font-family: "GmarketSansLight";
     margin-left:10px;
-    margin-bottom:30px;
+    margin-bottom:40px;
     font-size: 15px;
 }
 

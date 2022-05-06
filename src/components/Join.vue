@@ -1,44 +1,59 @@
 <template>
 
- <div class="d-flex justify-start mb-6">
-  <div class="helpme">
-    <ul class="helpmelist">
-        <li>
-            <a href="#">
-            <div class="profile">
-            <div class="profile-item"><v-img src="../assets/images/user.png" /></div>
-            <p class="nickname">그린데이즈</p>
-            </div>
-            </a>
-            <a href="#" class="imghover">
-                <div class="wrphover">
-                    <div class="thumbnail"></div>
-                    <span class="new">NEW</span>                               
+<article class="holder mt80 mt50m hotkeyword">
+                <h3 class="subtit">HOT Keyword</h3>
+                <div class="lst_keyword tc mt20m">
+                    <div class="inner swiper on swiper0 swiper-container-initialized swiper-container-horizontal swiper-container-free-mode">
+                        <ul class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                            <li class="swiper-slide swiper-slide-active">
+							                                <a href="../search/02905_search_tag.html?find=%ED%94%8C%EB%9E%9C%ED%85%8C%EB%A6%AC%EC%96%B4"><span>#플랜테리어</span></a>
+							                                <a href="../search/02905_search_tag.html?find=%EB%B0%98%EB%A0%A4%EC%8B%9D%EB%AC%BC"><span>#반려식물</span></a>
+							                                <a href="../search/02905_search_tag.html?find=%ED%99%88%EA%B0%80%EB%93%9C%EB%8B%9D"><span>#홈가드닝</span></a>
+							                                <a href="../search/02905_search_tag.html?find=%EC%8B%9D%EB%AC%BC%EC%9D%B8%ED%85%8C%EB%A6%AC%EC%96%B4"><span>#식물인테리어</span></a>
+							                                <a href="../search/02905_search_tag.html?find=plant"><span>#plant</span></a>
+							                                <a href="../search/02905_search_tag.html?find=%EC%8B%9D%EB%AC%BC"><span>#식물</span></a>
+							                                <a href="../search/02905_search_tag.html?find=%EC%8B%9D%EB%AC%BC%EC%B9%B4%ED%8E%98"><span>#식물카페</span></a>
+							                                <a href="../search/02905_search_tag.html?find=%EA%B3%B5%EA%B8%B0%EC%A0%95%ED%99%94%EC%8B%9D%EB%AC%BC"><span>#공기정화식물</span></a>
+							                                <a href="../search/02905_search_tag.html?find=%EC%8B%B1%EA%B7%B8%EB%9F%B0+%EC%97%AC%ED%96%89"><span>#싱그런 여행</span></a>
+							                                <a href="../search/02905_search_tag.html?find=%EC%8B%9D%EB%AC%BC%ED%82%A4%EC%9A%B0%EA%B8%B0"><span>#식물키우기</span></a>
+							                                <a href="../search/02905_search_tag.html?find=%EB%AA%AC%EC%8A%A4%ED%85%8C%EB%9D%BC"><span>#몬스테라</span></a>
+							                                <a href="../search/02905_search_tag.html?find=%EC%88%98%EA%B2%BD%EC%9E%AC%EB%B0%B0"><span>#수경재배</span></a>
+							                                <a href="../search/02905_search_tag.html?find=%EC%8B%9D%EB%AC%BC%EC%A7%91%EC%82%AC"><span>#식물집사</span></a>
+							                                <a href="../search/02905_search_tag.html?find=%EA%BD%83"><span>#꽃</span></a>
+							                                <a href="../search/02905_search_tag.html?find=%ED%99%94%EB%B6%84"><span>#화분</span></a>
+							                                <a href="../search/02905_search_tag.html?find=%EA%B3%B5%EA%B8%B0%EC%A0%95%ED%99%94"><span>#공기정화</span></a>
+							                                <a href="../search/02905_search_tag.html?find=5%EC%9B%94"><span>#5월</span></a>
+							                                <a href="../search/02905_search_tag.html?find=6%EC%9B%94"><span>#6월</span></a>
+							                                <a href="../search/02905_search_tag.html?find=%ED%86%A0%EB%B6%84"><span>#토분</span></a>
+							                                <a href="../search/02905_search_tag.html?find=%EA%B0%80%EB%93%9C%EB%8B%9D"><span>#가드닝</span></a>
+							                                <a href="../search/02905_search_tag.html?find=%ED%96%89%EC%9E%89%ED%94%8C%EB%9E%9C%ED%8A%B8"><span>#행잉플랜트</span></a>
+							                                <a href="../search/02905_search_tag.html?find=%EB%B2%A0%EB%9E%80%EB%8B%A4%EC%A0%95%EC%9B%90"><span>#베란다정원</span></a>
+							                                <a href="../search/02905_search_tag.html?find=%ED%8A%A4%EB%A6%BD"><span>#튤립</span></a>
+							                        
+							                            </li>
+                        </ul>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
                 </div>
-                <div class="profilebottom">
-                <div class="check"><v-img src="../assets/images/check.png" style="width:30px;height:30px;"/></div>
-                <div class="profilebottom-item"><p>사진 보정하는 능력을 삽니다.</p></div>
-                </div>
-
-                <div class="location">
-                <div class="location-item"><v-img src="../assets/images/location.png" style="width:22px;height:22px;margin-bottom:8px;"  /></div>
-                <div class="address"><p>부산시 부산진구</p></div>
-                </div>
-            </a>  
-        </li>
-    </ul>
-  </div>
- </div>
+            </article>
                         
                                                   
                      
 </template>
 
 <script>
-export default {
-    setup () {
-        
 
+export default {
+    created() {
+    var scripts = [
+      "@/assets/js/swiper.js"
+    ];
+    scripts.forEach(script => {
+      let tag = document.createElement("script");
+      tag.setAttribute("src", script);
+      document.head.appendChild(tag);
+    });
+  },
+    setup () {
         return {}
     }
 }
@@ -46,85 +61,47 @@ export default {
 
 <style scoped>
 
-.helpme li {
-    float: left;
-    position: relative;
-    margin-top: 30px;
-    margin-right: 20px;
+.lst_keyword a:nth-child(7n) span, .lst_keyword a:nth-child(7n+3) span, .lst_keyword a:nth-child(7n+5) span {
+    color: #fff;
+    background-color: rgba(0,154,62,0.9);
 }
 
-.location {
+.lst_keyword li {
+    width: auto;
+}
+
+.lst_keyword a span {
+    padding: 0 22px;
+    line-height: 34px;
+    font-size: 14px;
+    border-radius: 17px;
+}
+
+.lst_keyword a span {
+    display: inline-block;
+    padding: 0 30px;
+    line-height: 48px;
+    font-size: 16px;
+    color: #3a6b4a;
+    background-color: rgba(209,232,218,0.9);
+    border-radius: 24px;
+}
+
+.swiper-wrapper, .swiper-container-initialized .swiper-wrapper {
+    z-index: 1;
+    position: relative;
     display: flex;
-    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition-property: transform;
+    box-sizing: content-box;
 }
 
-.wrphover {
+.swiper-slide {
     position: relative;
-    overflow: hidden;
-    border-radius: 4px;
-}
+    height: 100%;
+    transition-property: transform;
 
-.helpme .new {
-    top: 0;
-    border-bottom-right-radius: 4px;
-    padding-right: 8px;
-    padding-left: 8px;
-    line-height: 20px;
-    font-size: 12px;
-    background-color: #3476D8;
-    color: #ffffff;
-    z-index: 100;
-    position: absolute;
-}
-
-.nickname {
-    font-size: 17px;
-    margin-left: 3px;
-}
-
-.profile {
-    display:flex;
-    align-items:center;
-    color: #707070;
-    margin-bottom: 5px;
-}
-
-.profile-item {
-    width:30px;
-    height: 30px;
-    bottom: 0;
-}
-
-.profilebottom {
-    display: flex;
-    align-items: center;
-}
-
-.profilebottom-item {
-   color:#707070;
-   font-size: 17px;
-}
-
-.address{
-    color: #707070;
-    font-family: "GmarketSansMedium";
-    margin-left:8px;
-    margin-bottom:5px;
-}
-
-.thumbnail {
-    width:250px;
-    height: 180px;
-    background-color: #c7deff;
-    /* background-position: center center; */
-    /* background-size: cover; */
-    position: relative;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.notM .wrphover .thumbs, .notM .wrphover .wrpimg, .notM .wrphover > img {
-    transition: transform .4s ease-in-out;
 }
 
 

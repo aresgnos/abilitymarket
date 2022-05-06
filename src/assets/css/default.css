@@ -7,3 +7,7 @@ a {
     line-height: 100%;
     color: #535353;;
 }
+
+.mb-6 {
+    margin: 0;
+}

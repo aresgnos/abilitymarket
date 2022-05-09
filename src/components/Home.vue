@@ -99,16 +99,32 @@
     <div class="hr1"></div>
 </article>
     
-    <article class="category3">
-    <div class="keyword" style="margin-top:30px;">
-        <h3>인기키워드</h3><br />
-        <div class="keywordbox">
-            <v-img src="../assets/images/keyword.png" />
-            
-        </div>
+    <article class="holder category3">
+                <h3 style="margin-top:30px;">인기있는 키워드</h3><br />
+                <div class="keywordbox tc mt20m">
+                    <div class="inner swiper on swiper0 swiper-container-initialized swiper-container-horizontal swiper-container-free-mode">
+                        <ul class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                            <li class="swiper-slide swiper-slide-active">
+                                <a href="#"><span>#플랜테리어</span></a>
+                                <a href="#"><span>#플랜테리어</span></a>
+                                <a href="#"><span>#플랜테리어</span></a>
+                                <a href="#"><span>#플랜테리어</span></a>
+                                <a href="#"><span>#플랜테리어</span></a>
+                                <a href="#"><span>#플랜테리어</span></a>
+                                <a href="#"><span>#플랜테리어</span></a>
+                                <a href="#"><span>#플랜테리어</span></a>
+                                <a href="#"><span>#플랜테리어</span></a>
+                                <a href="#"><span>#플랜테리어</span></a>
+                                <a href="#"><span>#플랜테리어</span></a>
+                                <a href="#"><span>#플랜테리어</span></a>
+                                <a href="#"><span>#플랜테리어</span></a>
 
-    </div>
-    </article>
+                        
+                            </li>
+                        </ul>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                </div>
+            </article>
 
     <div class="hr1"></div>
     <div class="tip" style="margin-top:30px;">
@@ -296,6 +312,57 @@ h3 {
     transition: transform .4s ease-in-out;
 }
 
+.holder {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
 
+.keywordbox .inner {
+    padding: 0 31px;
+}
+
+.keywordbox {
+    width:100%;
+    height: 200px;
+    background-color: #e0edff;
+}
+
+.keywordbox a:nth-child(7n) span, .keywordbox a:nth-child(7n+3) span, .keywordbox a:nth-child(7n+5) span {
+    color: #fff;
+    background-color: rgba(0,154,62,0.9);
+}
+
+.keywordbox li {
+    width: auto;
+}
+
+.keywordbox a span {
+    display: inline-block;
+    padding: 0 30px;
+    line-height: 48px;
+    font-size: 16px;
+    color: #086efc;
+    background-color: #ffffff;
+    border-radius: 24px;
+}
+
+.swiper-wrapper, .swiper-container-initialized .swiper-wrapper {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+
+.swiper-slide {
+    position: relative;
+    height: 100%;
+    transition-property: transform;
+
+}
 
 </style>

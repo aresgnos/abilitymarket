@@ -9,8 +9,4 @@ module.exports = defineConfig({
 		}
   },
   
-  "vueCompilerOptions": {
-    "experimentalDisableTemplateSupport": true,
-    "jsx": "preserve"
-    }
 })

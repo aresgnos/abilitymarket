@@ -36,6 +36,7 @@
     </article>
 
     <article class="category2">
+    <div class="help">
     <h3 style="margin-top:30px;">도와주세요</h3><br />
     <div class="d-flex justify-space-around mb-6" style="margin-top:-40px;">
     <div class="helpme" v-for="n in 4" :key="n" >
@@ -65,8 +66,11 @@
         </li>
     </ul>
   </div>
+  </div>
+  
     </div>
     <h3>도와줄게요</h3><br />
+    <div class="help">
     <div class="d-flex justify-space-around mb-6" style="margin-top:-40px;">
     <div class="helpme" v-for="n in 4" :key="n" >
     <ul class="helpmelist">
@@ -96,59 +100,101 @@
     </ul>
      </div>
     </div>
+    </div>
+
+    
     <div class="hr1"></div>
 </article>
     
-    <article class="holder category3">
-                <h3 style="margin-top:30px;">인기있는 키워드</h3><br />
-                <div class="keywordbox tc mt20m">
-                    <div class="inner swiper on swiper0 swiper-container-initialized swiper-container-horizontal swiper-container-free-mode">
-                        <ul class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
-                            <li class="swiper-slide swiper-slide-active">
-                                <a href="#"><span>#플랜테리어</span></a>
-                                <a href="#"><span>#플랜테리어</span></a>
-                                <a href="#"><span>#플랜테리어</span></a>
-                                <a href="#"><span>#플랜테리어</span></a>
-                                <a href="#"><span>#플랜테리어</span></a>
-                                <a href="#"><span>#플랜테리어</span></a>
-                                <a href="#"><span>#플랜테리어</span></a>
-                                <a href="#"><span>#플랜테리어</span></a>
-                                <a href="#"><span>#플랜테리어</span></a>
-                                <a href="#"><span>#플랜테리어</span></a>
-                                <a href="#"><span>#플랜테리어</span></a>
-                                <a href="#"><span>#플랜테리어</span></a>
-                                <a href="#"><span>#플랜테리어</span></a>
+    <article class="category3" >
+    <h3 style="margin-top:30px;">인기있는 키워드</h3><br />
+    <div class="keywordbox">
+        <div class="swiper-inner">
+      <div class="swiper-container">
+            <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms; ">
+            <div class="timestamp">
+              <a href="#"><span>#플랜테리어</span></a>
+              <a href="#"><span>#플랜테리어</span></a>
+              <a href="#"><span>#플랜테리어</span></a>
+              <a href="#"><span>#플랜테리어</span></a>
+              <a href="#"><span>#플랜테리어</span></a>
+              <a href="#"><span>#플랜테리어</span></a>
+              <a href="#"><span>#플랜테리어</span></a>
+              <a href="#"><span>#플랜테리어</span></a>
+              <a href="#" style="margin-left:30px;"><span style="margin-left:30px;">#플랜테리어</span></a>
+              <a href="#"><span>#플랜테리어</span></a>
+              <a href="#"><span>#플랜테리어</span></a>
+              <a href="#"><span>#플랜테리어</span></a>
+              <a href="#"><span>#플랜테리어</span></a>
+              <a href="#"><span>#플랜테리어</span></a>
+              <a href="#"><span>#플랜테리어</span></a>
+              <a href="#"><span>#플랜테리어</span></a>
+              <a href="#"><span>#플랜테리어</span></a>
+              <a href="#"><span>#플랜테리어</span></a>
+              <a href="#"><span>#플랜테리어</span></a>
+              <a href="#"><span>#플랜테리어</span></a>
+              <a href="#"><span>#플랜테리어</span></a>
+              <a href="#"><span>#플랜테리어</span></a>
+              <a href="#"><span>#플랜테리어</span></a>
+              
 
-                        
-                            </li>
-                        </ul>
-                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-                </div>
-            </article>
+            </div>
+            </div>
+            </div>
+            </div>
 
+        
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+   
+    </article>
+
+    <article class="category6">
     <div class="hr1"></div>
     <div class="tip" style="margin-top:30px;">
         <h3>능력자의 팁</h3><br />
-       
     </div>
+    </article>
 
+    <article class="category7">
     <div class="hr1"></div>
     <div class="story" style="margin-top:30px;">
         <h3>사연</h3><br />
-       
+    </div>
+    </article>
+
+    <article class="category8">
+        <div class="hr1"></div>
+         <h3 style="margin-top:30px;">이달의 랭킹</h3><br />
+
+    <div class="rank" style="margin-top:30px;">
+    <div class="rank-item">
+        <div class="popular">능력자</div>
+    </div>
+    <div class="rank-item">
+        <div class="popular">능력자</div>
+    </div>
+    <div class="rank-item">
+        <div class="popular">능력자</div>
     </div>
 
-    <div class="hr1"></div>
-    <div class="rank" style="margin-top:30px;">
-        <h3>이달의 랭킹</h3><br />
-       
     </div>
+    </article>
+
+    <article class="category7">
+    <div class="hr1"></div>
+    <div class="story" style="margin-top:30px;">
+        <h3>사연</h3><br />
+    </div>
+    </article>
+
 </section>
    
 </template>
 
 <script>
-import { reactive } from '@vue/reactivity'
+import { onMounted, reactive } from 'vue';
 import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
 
@@ -162,6 +208,21 @@ export default {
                  { image:require('../assets/images/slide1.jpg')},
         ],
         })
+
+        onMounted(()=>{
+        var swiper = new Swiper('.swiper-container', {
+        //pagination: '.swiper-pagination',
+        slidesPerView: 3,
+        paginationClickable: true,
+        grabCursor: true,
+        paginationClickable: true,
+        
+        });
+        
+
+        console.log(state.data);
+        })
+  
         
 
         return {state}
@@ -170,6 +231,8 @@ export default {
 </script>
 
 <style lang="css" scoped>
+@import "../assets/css/swiper.css";
+
 @font-face {
   font-family: "GmarketSansMedium";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
@@ -312,57 +375,32 @@ h3 {
     transition: transform .4s ease-in-out;
 }
 
-.holder {
+/* .holder {
     position: relative;
     margin: 0 auto;
     max-width: 1200px;
     box-sizing: border-box;
-}
+} */
 
-.keywordbox .inner {
-    padding: 0 31px;
-}
-
-.keywordbox {
-    width:100%;
-    height: 200px;
-    background-color: #e0edff;
-}
-
-.keywordbox a:nth-child(7n) span, .keywordbox a:nth-child(7n+3) span, .keywordbox a:nth-child(7n+5) span {
-    color: #fff;
-    background-color: rgba(0,154,62,0.9);
-}
-
-.keywordbox li {
-    width: auto;
-}
-
-.keywordbox a span {
-    display: inline-block;
-    padding: 0 30px;
-    line-height: 48px;
-    font-size: 16px;
-    color: #086efc;
-    background-color: #ffffff;
-    border-radius: 24px;
-}
-
-.swiper-wrapper, .swiper-container-initialized .swiper-wrapper {
-    z-index: 1;
-    position: relative;
+.rank {
     display: flex;
-    width: 100%;
-    height: 100%;
-    transition-property: transform;
-    box-sizing: content-box;
+    justify-content: space-around;
+    width:100%;
+    height:550px;
 }
 
-.swiper-slide {
-    position: relative;
-    height: 100%;
-    transition-property: transform;
 
+.popular {
+    width: 374px;
+    padding: 12px 0px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(33, 34, 36);
+    text-align: center;
+    background-color: rgb(255, 212, 0);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
+
 
 </style>

@@ -1,5 +1,10 @@
 <template>
-<section id = "maincontainer">
+<v-app>
+    <v-main>
+    <section id = "maincontainer" style="position:relative;">
+
+    <v-row>
+          <v-col>
     <article class="mainslide">
     <div class="slide">
         <vueper-slides>
@@ -7,15 +12,17 @@
         </vueper-slides>
     </div>
     </article>
-    
+    </v-col>
+    </v-row>
+
+    <v-row>
+          <v-col>
     <article class="category1">
      <div class="bestcategory">
         <h3>베스트&nbsp;카테고리</h3>
         <nav>
         <ul class="category">
-       
-        <li class="category-item"><a href="#"><v-img src="../assets/images/life_icon.png" style="width:75px;"></v-img>
-        <p>생활</p></a></li>
+        <li class="category-item"><a href="#"><v-img src="../assets/images/life_icon.png" style="width:75px;" /><p>생활</p></a></li>
         <li class="category-item"><a href="#"><v-img src="../assets/images/fix_icon.png" style="width:75px;"/><p>조립/수리</p></a></li>
         <li class="category-item"><a href="#"><v-img src="../assets/images/diy_icon.png" style="width:75px;"/><p>DIY</p></a></li>
         <li class="category-item"><a href="#"><v-img src="../assets/images/health_icon.png" style="width:75px;" /><p>건강</p></a></li>
@@ -32,15 +39,25 @@
         </ul>
         </nav>
     </div>
-    <div class="hr1"></div>
     </article>
+    </v-col>
+    </v-row>
 
+    <div class="hr1"></div>
+
+    <v-row>
+        <v-col>
+   
     <article class="category2">
-    <div class="help">
-    <h3 style="margin-top:30px;">도와주세요</h3><br />
+
+    <div class="d-flex mb-6" style="margin-top:30px;">
+        <div><h3>도와주세요</h3></div>
+    </div>
+    
     <div class="d-flex justify-space-around mb-6" style="margin-top:-40px;">
+    <div class="d-flex flex-row mb-6">
     <div class="helpme" v-for="n in 4" :key="n" >
-    <ul class="helpmelist">
+    <ul class="helpmelist" style="margin-right:10px;margin-left:10px">
         <li>
             <a href="#">
             <div class="profile">
@@ -67,13 +84,13 @@
     </ul>
   </div>
   </div>
-  
     </div>
+  
     <h3>도와줄게요</h3><br />
-    <div class="help">
     <div class="d-flex justify-space-around mb-6" style="margin-top:-40px;">
+    <div class="d-flex flex-row mb-6">
     <div class="helpme" v-for="n in 4" :key="n" >
-    <ul class="helpmelist">
+    <ul class="helpmelist" style="margin-right:10px;margin-left:10px">
         <li>
             <a href="#">
             <div class="profile">
@@ -101,95 +118,152 @@
      </div>
     </div>
     </div>
-
-    
-    <div class="hr1"></div>
 </article>
+</v-col>
+</v-row>
+
+<div class="hr1"></div>
     
-    <article class="category3" >
+    <v-row>
+        <v-col>
+    <article class="category4" >
     <h3 style="margin-top:30px;">인기있는 키워드</h3><br />
-    <div class="keywordbox">
-        <div class="swiper-inner">
-      <div class="swiper-container">
-            <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms; ">
-            <div class="timestamp">
-              <a href="#"><span>#플랜테리어</span></a>
-              <a href="#"><span>#플랜테리어</span></a>
-              <a href="#"><span>#플랜테리어</span></a>
-              <a href="#"><span>#플랜테리어</span></a>
-              <a href="#"><span>#플랜테리어</span></a>
-              <a href="#"><span>#플랜테리어</span></a>
-              <a href="#"><span>#플랜테리어</span></a>
-              <a href="#"><span>#플랜테리어</span></a>
-              <a href="#" style="margin-left:30px;"><span style="margin-left:30px;">#플랜테리어</span></a>
-              <a href="#"><span>#플랜테리어</span></a>
-              <a href="#"><span>#플랜테리어</span></a>
-              <a href="#"><span>#플랜테리어</span></a>
-              <a href="#"><span>#플랜테리어</span></a>
-              <a href="#"><span>#플랜테리어</span></a>
-              <a href="#"><span>#플랜테리어</span></a>
-              <a href="#"><span>#플랜테리어</span></a>
-              <a href="#"><span>#플랜테리어</span></a>
-              <a href="#"><span>#플랜테리어</span></a>
-              <a href="#"><span>#플랜테리어</span></a>
-              <a href="#"><span>#플랜테리어</span></a>
-              <a href="#"><span>#플랜테리어</span></a>
-              <a href="#"><span>#플랜테리어</span></a>
-              <a href="#"><span>#플랜테리어</span></a>
-              
-
-            </div>
-            </div>
-            </div>
-            </div>
-
+    <div class="keyword">
+        <div class="lst_keyword">
+            <ul class="keyword-list">
+                    <li><a href="#"><span>#플랜테리어</span></a></li>
+                    <li><a href="#"><span>#플랜테리어</span></a></li>
+                    <li><a href="#"><span>#플랜테리어</span></a></li>
+                    <li><a href="#"><span>#플랜테리어</span></a></li>
+                    <li><a href="#"><span>#플랜테리어</span></a></li>
+                    <li><a href="#"><span>#플랜테리어</span></a></li>
+                    <li><a href="#"><span>#플랜테리어</span></a></li>
+            </ul>
         
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-      </div>
-   
-    </article>
 
-    <article class="category6">
+            <ul class="lst_keyword2-list" style="margin-left:70px;margin-top:20px;">
+                <li><a href="#"><span>#플랜테리어</span></a></li>
+                <li><a href="#"><span>#플랜테리어</span></a></li>
+                <li><a href="#"><span>#플랜테리어</span></a></li>
+                <li><a href="#"><span>#플랜테리어</span></a></li>
+                <li><a href="#"><span>#플랜테리어</span></a></li>
+                <li><a href="#"><span>#플랜테리어</span></a></li>
+            </ul>
+    </div>
+    </div>
+        
+    </article>
+    </v-col>
+    </v-row>
+
     <div class="hr1"></div>
+   
+    <v-row>
+        <v-col>
+    <article class="category5">
     <div class="tip" style="margin-top:30px;">
         <h3>능력자의 팁</h3><br />
     </div>
     </article>
+    </v-col>
+    </v-row>
 
-    <article class="category7">
     <div class="hr1"></div>
+    
+    <v-row>
+        <v-col>
+    <article class="category6">
     <div class="story" style="margin-top:30px;">
         <h3>사연</h3><br />
     </div>
     </article>
+    </v-col>
+    </v-row>
 
-    <article class="category8">
-        <div class="hr1"></div>
-         <h3 style="margin-top:30px;">이달의 랭킹</h3><br />
-
-    <div class="rank" style="margin-top:30px;">
-    <div class="rank-item">
-        <div class="popular">능력자</div>
-    </div>
-    <div class="rank-item">
-        <div class="popular">능력자</div>
-    </div>
-    <div class="rank-item">
-        <div class="popular">능력자</div>
-    </div>
-
-    </div>
-    </article>
-
-    <article class="category7">
     <div class="hr1"></div>
-    <div class="story" style="margin-top:30px;">
-        <h3>사연</h3><br />
+
+    <v-row>
+        <v-col>
+    <article class="category7">
+    <h3 style="margin-top:30px;">이달의 랭킹</h3><br />
+    <div class="rank">
+    <div class="d-flex justify-space-around mb-6" style="margin-top:-40px;margin:0px !important;">
+    <div class="d-flex flex-row mb-6" style="gap:10px;">
+
+        <div class="rank-item"  v-for="n in 3" :key="n" >
+        <div class="d-flex flex-column mb-6">
+            <div class="rank-top">이달의 능력자</div>
+            <div class="rank-holder">
+                <div class="rank-inner">
+                    <span>
+                    <v-img src="../assets/images/medal1.png" style="width:35px;height:35px;"></v-img>
+                    </span>
+                    <span>
+                    <v-img src="../assets/images/user.png" style="width:35px;height:35px;"></v-img>
+                    </span>
+                    <div class="rankname">안녕하세요</div>
+                </div>
+            </div>
+
+            <div class="rank-other">
+            <div class="rank-inner">
+                <span>
+                    <v-img src="../assets/images/medal2.png" style="width:35px;height:35px;"></v-img>
+                </span>
+                <span>
+                    <v-img src="../assets/images/user.png" style="width:35px;height:35px;"></v-img>
+                </span>
+                   <div class="rankname">안녕하세요</div>
+            </div>
+            <div class="rankline"></div>
+
+            <div class="rank-inner">
+                <span>
+                    <v-img src="../assets/images/medal3.png" style="width:35px;height:35px;"></v-img>
+                </span>
+                 <span>
+                    <v-img src="../assets/images/user.png" style="width:35px;height:35px;"></v-img>
+                </span>
+                   <div class="rankname">안녕하세요</div>
+            </div>
+            <div class="rankline"></div>
+
+            <div class="rank-inner">
+                <span>
+                    <v-img src="../assets/images/medal4.png" style="width:30px;height:30px;"></v-img>
+                </span>
+                <span>
+                    <v-img src="../assets/images/user.png" style="width:35px;height:35px;"></v-img>
+                </span>
+                   <div class="rankname">안녕하세요</div>
+            </div>
+            <div class="rankline"></div>
+
+            <div class="rank-inner">
+                <span>
+                    <v-img src="../assets/images/medal5.png" style="width:30px;height:30px;"></v-img>
+                </span>
+                <span>
+                    <v-img src="../assets/images/user.png" style="width:35px;height:35px;"></v-img>
+                </span>
+                    <div class="rankname">안녕하세요</div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    </div>
     </div>
     </article>
+    </v-col>
+    </v-row>
+    <div class="hr1"></div>
+
+
 
 </section>
+</v-main>
+</v-app>
    
 </template>
 
@@ -210,17 +284,7 @@ export default {
         })
 
         onMounted(()=>{
-        var swiper = new Swiper('.swiper-container', {
-        //pagination: '.swiper-pagination',
-        slidesPerView: 3,
-        paginationClickable: true,
-        grabCursor: true,
-        paginationClickable: true,
         
-        });
-        
-
-        console.log(state.data);
         })
   
         
@@ -231,7 +295,9 @@ export default {
 </script>
 
 <style lang="css" scoped>
-@import "../assets/css/swiper.css";
+@import "../assets/css/default.css";
+@import "../assets/css/scrolling.css";
+@import "../assets/css/keyword.css";
 
 @font-face {
   font-family: "GmarketSansMedium";
@@ -260,6 +326,14 @@ h3 {
     width: 100%;
 }
 
+.hr1 {
+    margin-top: 30px;
+    height: 2px;
+    background-color: #f2f2f2;
+}
+
+/* 베스트 카테고리 */
+
 .bestcategory {
     margin-top: 30px;
   
@@ -280,23 +354,16 @@ h3 {
     height: 130px;
 }
 
-.hr1 {
-    margin-top: 30px;
-    height: 2px;
-    background-color: #f2f2f2;
-}
-
 .category-item > a > p {
     text-align: center;
     margin-top :10px;
 }
 
+/* 도와주세요 */
 
 .helpme li {
-    float: left;
     position: relative;
     margin-top: 30px;
-    margin-right: 20px;
 }
 
 .location {
@@ -375,32 +442,55 @@ h3 {
     transition: transform .4s ease-in-out;
 }
 
-/* .holder {
-    position: relative;
-    margin: 0 auto;
-    max-width: 1200px;
-    box-sizing: border-box;
-} */
+/* 이달의 랭킹 */
 
-.rank {
-    display: flex;
-    justify-content: space-around;
-    width:100%;
-    height:550px;
+
+.rank-item {
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
-
-.popular {
-    width: 374px;
+.rank-top {
+    width: 340px;
     padding: 12px 0px;
-    font-size: 16px;
-    font-weight: bold;
-    color: rgb(33, 34, 36);
+    font-size: 17px;
+    color: #ffffff;
     text-align: center;
-    background-color: rgb(255, 212, 0);
+    background-color: #3476d8;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    
 }
+
+.rank-holder {
+    box-shadow: rgba(8, 8, 8, 0.08) 5px 5px 5px 5px;
+    border: 1px solid #3476d8;
+    margin-bottom: 16px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.rank-inner {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 20px 24px 20px 25px;
+    gap:10px;
+}
+
+.rankline {
+    height: 1px;
+    width: calc(100% - 48px);
+    margin: 0px auto;
+    background-color: rgb(217, 229, 252);
+}
+
+.rank-other {
+    box-shadow: rgba(8, 8, 8, 0.08) 5px 5px 5px 5px;
+    border-radius: 8px;
+
+}
+
 
 
 </style>

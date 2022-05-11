@@ -1,4 +1,7 @@
 <template>
+
+<v-row>
+  <v-col>
       <div class="d-flex justify-space-around mb-6">
         <div class="d-flex flex-column mb-6">
           <div class="logincontainer">
@@ -63,6 +66,9 @@
                 </div>
               </div>
             </div>
+
+            </v-col>
+            </v-row>
 
 </template>
 

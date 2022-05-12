@@ -1,6 +1,6 @@
 <template>
     <div>
-
+        구매페이지
     </div>
 </template>
 

@@ -21,21 +21,93 @@
      <div class="bestcategory">
         <h3>베스트&nbsp;카테고리</h3>
         <nav>
-        <ul class="category">
-        <li class="category-item"><a href="#"><v-img src="../assets/images/life_icon.png" style="width:75px;" /><p>생활</p></a></li>
-        <li class="category-item"><a href="#"><v-img src="../assets/images/fix_icon.png" style="width:75px;"/><p>조립/수리</p></a></li>
-        <li class="category-item"><a href="#"><v-img src="../assets/images/diy_icon.png" style="width:75px;"/><p>DIY</p></a></li>
-        <li class="category-item"><a href="#"><v-img src="../assets/images/health_icon.png" style="width:75px;" /><p>건강</p></a></li>
-        <li class="category-item"><a href="#"><v-img src="../assets/images/pet_icon.png" style="width:75px;" /><p>애완동물</p></a></li>
-        <li class="category-item"><a href="#"><v-img src="../assets/images/cook_icon.png" style="width:75px;"/><p>요리</p></a></li>
+        <ul class="category" style="margin-top:10px;">
+        <li class="category-item">
+            <v-img src="../assets/images/life_icon.png" style="width:75px;" /><p>생활</p>
+            <div class="detail">
+            <a href="http://localhost:8080/buy#/buy" class="buy"><span>구매</span></a><span>|</span>
+            <a href="http://localhost:8080/buy#/sell" class="sell"><span>판매</span></a>
+        </div>
+        </li>
+        <li class="category-item">
+            <v-img src="../assets/images/fix_icon.png" style="width:75px;"/><p>조립/수리</p>
+            <div class="detail">
+            <a href="http://localhost:8080/buy#/buy" class="buy"><span>구매</span></a><span>|</span>
+            <a href="http://localhost:8080/buy#/sell" class="sell"><span>판매</span></a>
+        </div>
+        </li>
+        <li class="category-item">
+            <v-img src="../assets/images/diy_icon.png" style="width:75px;"/><p>DIY</p>
+            <div class="detail">
+            <a href="http://localhost:8080/buy#/buy" class="buy"><span>구매</span></a><span>|</span>
+            <a href="http://localhost:8080/buy#/sell" class="sell"><span>판매</span></a>
+        </div>
+        </li>
+        <li class="category-item">
+            <v-img src="../assets/images/health_icon.png" style="width:75px;" /><p>건강</p>
+            <div class="detail">
+            <a href="http://localhost:8080/buy#/buy" class="buy"><span>구매</span></a><span>|</span>
+            <a href="http://localhost:8080/buy#/sell" class="sell"><span>판매</span></a>
+        </div>
+        </li>
+        <li class="category-item">
+            <v-img src="../assets/images/pet_icon.png" style="width:75px;" /><p>애완동물</p>
+            <div class="detail">
+            <a href="http://localhost:8080/buy#/buy" class="buy"><span>구매</span></a><span>|</span>
+            <a href="http://localhost:8080/buy#/sell" class="sell"><span>판매</span></a>
+        </div>
+        </li>
+        <li class="category-item">
+            <v-img src="../assets/images/cook_icon.png" style="width:75px;"/><p>요리</p>
+            <div class="detail">
+            <a href="http://localhost:8080/buy#/buy" class="buy"><span>구매</span></a><span>|</span>
+            <a href="http://localhost:8080/buy#/sell" class="sell"><span>판매</span></a>
+        </div>
+        </li>
         </ul>
         <ul class="category">
-        <li class="category-item"><a href="#"><v-img src="../assets/images/study_icon.png" style="width:75px;"/><p>공부</p></a></li>
-        <li class="category-item"><a href="#"><v-img src="../assets/images/it_icon.png" style="width:75px;"/><p>IT</p></a></li>
-        <li class="category-item"><a href="#"><v-img src="../assets/images/business_icon.png" style="width:75px;"/><p>비즈니스</p></a></li>
-        <li class="category-item"><a href="#"><v-img src="../assets/images/hobby_icon.png" style="width:75px;"/><p>취미</p></a></li>
-        <li class="category-item"><a href="#"><v-img src="../assets/images/activity_icon.png" style="width:75px;"/><p>운동</p></a></li>
-        <li class="category-item"><a href="#"><v-img src="../assets/images/etc_icon.png" style="width:75px;"/><p>기타</p></a></li>
+        <li class="category-item">
+            <v-img src="../assets/images/study_icon.png" style="width:75px;"/><p>공부</p>
+            <div class="detail">
+            <a href="http://localhost:8080/buy#/buy" class="buy"><span>구매</span></a><span>|</span>
+            <a href="http://localhost:8080/buy#/sell" class="sell"><span>판매</span></a>
+        </div>
+        </li>
+        <li class="category-item">
+            <v-img src="../assets/images/it_icon.png" style="width:75px;"/><p>IT</p>
+            <div class="detail">
+            <a href="http://localhost:8080/buy#/buy" class="buy"><span>구매</span></a><span>|</span>
+            <a href="http://localhost:8080/buy#/sell" class="sell"><span>판매</span></a>
+        </div>
+        </li>
+        <li class="category-item">
+            <v-img src="../assets/images/business_icon.png" style="width:75px;"/><p>비즈니스</p>
+            <div class="detail">
+            <a href="http://localhost:8080/buy#/buy" class="buy"><span>구매</span></a><span>|</span>
+            <a href="http://localhost:8080/buy#/sell" class="sell"><span>판매</span></a>
+        </div>
+        </li>
+        <li class="category-item">
+            <v-img src="../assets/images/hobby_icon.png" style="width:75px;"/><p>취미</p>
+            <div class="detail">
+            <a href="http://localhost:8080/buy#/buy" class="buy"><span>구매</span></a><span>|</span>
+            <a href="http://localhost:8080/buy#/sell" class="sell"><span>판매</span></a>
+        </div>
+        </li>
+        <li class="category-item">
+            <v-img src="../assets/images/activity_icon.png" style="width:75px;"/><p>운동</p>
+            <div class="detail">
+            <a href="http://localhost:8080/buy#/buy" class="buy"><span>구매</span></a><span>|</span>
+            <a href="http://localhost:8080/buy#/sell" class="sell"><span>판매</span></a>
+        </div>
+        </li>
+        <li class="category-item">
+            <v-img src="../assets/images/etc_icon.png" style="width:75px;"/><p>기타</p>
+            <div class="detail">
+            <a href="http://localhost:8080/buy#/buy" class="buy"><span>구매</span></a><span>|</span>
+            <a href="http://localhost:8080/buy#/sell" class="sell"><span>판매</span></a>
+        </div>
+        </li>
         </ul>
         </nav>
     </div>
@@ -268,7 +340,7 @@
 </template>
 
 <script>
-import { onMounted, reactive } from 'vue';
+import { reactive } from 'vue';
 import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
 
@@ -283,11 +355,6 @@ export default {
         ],
         })
 
-        onMounted(()=>{
-        
-        })
-  
-        
 
         return {state}
     }
@@ -298,6 +365,7 @@ export default {
 @import "../assets/css/default.css";
 @import "../assets/css/scrolling.css";
 @import "../assets/css/keyword.css";
+@import "../assets/css/category.css";
 
 @font-face {
   font-family: "GmarketSansMedium";
@@ -308,17 +376,6 @@ export default {
 }
 
 ul, li, p { list-style: none; margin: 0; padding: 0;}
-
-a {
-  text-decoration: none;
-  line-height: 100%;
-  color: #3476D8;
-}
-
-/* li:hover {
-    background-color : #9BC9FF;
-} */
-
 
 h3 {
     font-family: "GmarketSansMedium";
@@ -332,35 +389,8 @@ h3 {
     background-color: #f2f2f2;
 }
 
-/* 베스트 카테고리 */
-
-.bestcategory {
-    margin-top: 30px;
-  
-}
-
-.category {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.category > li {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 17px;
-    width: 130px;
-    height: 130px;
-}
-
-.category-item > a > p {
-    text-align: center;
-    margin-top :10px;
-}
 
 /* 도와주세요 */
-
 .helpme li {
     position: relative;
     margin-top: 30px;
@@ -442,9 +472,8 @@ h3 {
     transition: transform .4s ease-in-out;
 }
 
+
 /* 이달의 랭킹 */
-
-
 .rank-item {
     margin-right: 10px;
     margin-left: 10px;
@@ -459,7 +488,6 @@ h3 {
     background-color: #3476d8;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    
 }
 
 .rank-holder {

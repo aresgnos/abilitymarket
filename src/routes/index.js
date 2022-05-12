@@ -5,6 +5,7 @@ import Login from '@/components/Login';
 import Join from '@/components/Join';
 import Buy from '@/components/Buy';
 import Sell from '@/components/Sell';
+import Test from '@/components/Test';
 
 
 const routes = [
@@ -14,6 +15,7 @@ const routes = [
     { path : '/join', name:'Join', component:Join },
     { path : '/buy', name:'Buy', component:Buy },
     { path : '/sell', name:'Sell', component:Sell },
+    { path : '/test', name:'Test', component:Test },
     
 ];
 

@@ -25,8 +25,8 @@
                     <div class="d-flex mb-6">
                       <input type="checkbox" /><span>이메일 저장</span>
                       <div class="checklink" style="margin-left: 90px">
-                        <a href="#" class="findmail" style="margin-right: 10px">아이디찾기</a>
-                        <a href="#" class="findpw">비밀번호찾기</a>
+                        <a href="#" class="findmail" style="margin-right: 10px"><span>아이디찾기</span></a>
+                        <a href="#" class="findpw"><span>비밀번호찾기</span></a>
                       </div>
                     </div>
                   </div>
@@ -97,7 +97,7 @@ input {
   padding-left: 10px;
 }
 input:focus {
-  outline: none;
+  outline: 1.5px solid #3476d8;
 }
 input::placeholder {
   color: #a5a5a5;
@@ -203,6 +203,10 @@ input[type="checkbox"] {
 .snsitem {
     padding: 15px;
     margin-bottom:-10px;
+}
+
+.checklink > span {
+  color: #707070;
 }
 
 

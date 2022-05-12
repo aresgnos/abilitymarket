@@ -104,6 +104,13 @@ export default {
   font-style: normal;
 }
 
+@font-face {
+    font-family: 'Vitro_core';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Vitro_core.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 ul, li {
   list-style: none;
 }

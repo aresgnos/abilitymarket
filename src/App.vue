@@ -6,7 +6,7 @@
           <v-col>
             <div class="d-flex flex-row-reverse">
               <div class="top">
-                <router-link to="/login"
+                <router-link to="/login2"
                   ><button class="btn_login">로그인</button></router-link>
                 <router-link to="/join">
                 <button class="btn_join">회원가입</button></router-link>
@@ -64,13 +64,13 @@
         </v-col>
         </v-row>
 
-        <v-row>
+        <!-- <v-row>
           <v-col>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
           <div class="footer">
           footer
         </div>
         </v-col>
-        </v-row>
+        </v-row> -->
 
       </v-container>
     </v-main>

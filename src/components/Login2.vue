@@ -1,12 +1,9 @@
 <template>
-
-  <div class="joincontainer">
-   
+  <div class="logincontainer">
     <div class="logo">
       <v-img src="../assets/images/logo.jpg" style="width: 127px" />
     </div>
-
-    <div class="joinbox" style="margin-top:10px;">
+    <div class="loginbox">
       <div class="textbox">
         <input type="text" required />
         <span></span>
@@ -18,32 +15,26 @@
         <span></span>
         <label>비밀번호</label>
       </div>
-      <div class="textbox">
-        <input type="password" required />
-        <span></span>
-        <label>비밀번호 확인</label>
-      </div>
+      <button class="btn_login">로그인</button>
+    </div>
 
-      <div class="textbox">
-        <input type="text" required />
-        <span></span>
-        <label>이름</label>
-      </div>
+    <div class="check">
+    
+        <div class="mailsave">
+          <input type="checkbox" /><span>이메일 저장</span>
+        </div>
 
-      <div class="textbox">
-        <input type="text" required />
-        <span></span>
-        <label>전화번호</label>
-      </div>
-
-       <div class="textbox">
-        <input type="text" required />
-        <span></span>
-        <label>주소</label>
+        <div class="checklink" style="margin-left: 110px">
+          <a href="#" class="findmail" style="margin-right: 10px"
+            ><span>아이디찾기</span></a>
+          <a href="#" class="findpw"><span>비밀번호찾기</span></a>
+        </div>
       </div>
     
-        <div class="simplejoin" style="margin-top: 40px;">
-      <dt class="m_hide"><span>SNS 계정으로 간편 가입</span></dt>
+
+    <!-- 간편 로그인 -->
+    <div class="simplelogin" style="margin-top: 30px;">
+      <dt class="m_hide"><span>SNS 계정으로 간편 로그인</span></dt>
 
     <div class="sns">
       <div class="snsitem">
@@ -72,12 +63,14 @@
       </div>
     </div>
     </div>
-    <router-link to="/joinnext">
-    <button class="btn_next">다음으로</button></router-link>
+
+
+    <div class="join">
+      <button class="btn_join">당신의 가치를 경험해보세요. <span style="text-decoration:underline;">회원가입</span></button>
     </div>
-    </div>
-  
-  
+
+    
+  </div>
 </template>
 
 <script>
@@ -85,13 +78,12 @@ export default {};
 </script>
 
 <style lang="css" scoped>
-
-.joincontainer {
+.logincontainer {
   font-family: "GmarketSansLight";
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 10%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%);
 }
@@ -118,7 +110,8 @@ export default {};
   border: none;
   background: none;
   outline: none;
-  font-family: "GmarketSansMedium";
+color: #000000;
+font-family: "GmarketSansMedium";
 }
 
 .textbox > label {
@@ -157,8 +150,55 @@ export default {};
   width: 100%;
 }
 
-/* 간편 가입 */
-.simplejoin dt > span {
+/* 로그인 버튼 */
+.btn_login {
+  all: unset;
+  width: 380px;
+  height: 45px;
+  font-size: 15px;
+  background-color: #3476d8;
+  color: #ffffff;
+  font-family: "GmarketSansLight";
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+ margin : 5px;
+ margin-bottom:8px;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+}
+
+.mailsave {
+  font-family: "GmarketSansLight";
+  font-size: 14px;
+  color: #808080;
+  display: flex;
+  align-items: center;
+}
+
+.checklink > a {
+  font-size: 14px;
+  color: #808080;
+  font-family: "GmarketSansLight";
+}
+
+.findpw::before {
+  content: "|";
+  color: #808080;
+  margin-right: 10px;
+}
+
+/* 간편 로그인 */
+.simplelogin dt > span {
   display: inline-block;
   background-color: #fff;
   position: relative;
@@ -168,16 +208,16 @@ export default {};
   font-family: "GmarketSansMedium";
 }
 
-.simplejoin > dt {
+.simplelogin > dt {
   text-align: center;
   font-size: 14px;
   line-height: 52px;
   color: #808080;
   position: relative;
- 
+  font-family: "GmarketSansLight";
 }
 
-.simplejoin dt::after {
+.simplelogin dt::after {
   content: "";
   width: 100%;
   height: 1px;
@@ -192,7 +232,6 @@ export default {};
   flex-direction: row;
   justify-content: center;
   gap:20px;
-  margin-top:10px;
 }
 
 .snsitem {
@@ -214,26 +253,29 @@ export default {};
 }
 
 .google {
-    background: #e6e6e6;
+  background: #e6e6e6;
   width: 50px;
   height: 50px;
   border-radius: 50px;
 }
 
-/* 다음 버튼 */
-.btn_next {
+.btn_join {
   all: unset;
-  width: 380px;
-  height: 45px;
-  font-size: 15px;
-  background-color: #3476d8;
-  color: #ffffff;
-  font-family: "GmarketSansLight";
+  width: 350px;
+  height: 40px;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #0258da;
+  color: #0258da;
+  font-family: "GmarketSansMedium";
   border-radius: 5px;
   text-align: center;
   cursor: pointer;
-  margin-top:30px;
 }
 
-
+.join {
+    display: flex;
+    justify-content: center;
+    margin-top:30px;
+}
 </style>

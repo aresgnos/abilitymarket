@@ -39,8 +39,6 @@
             </div>
 
             <div class="sns">
-              <div class="d-flex justify-space-around mb-6" style="margin:0px !important;">
-                <div class="d-flex flex-row mb-6">
                     <div class="snsitem"><button class="kakao">
                     <v-img
                         src="../assets/images/kakao.png" style="width:35px;margin-left:7px"/>
@@ -54,12 +52,12 @@
                         src="../assets/images/naver.png" style="width:37px;margin-left:6px"/>
                     </button></div>
                 
-                </div>
-              </div>
             
                 <div class="d-flex justify-space-around mb-6">
                 <div class="join">
-                  <button class="btn_join">당신의 가치를 경험해보세요. 회원가입</button>
+                  <router-link to="/join">
+                  <button class="btn_join">당신의 가치를 경험해보세요. 회원가입</button></router-link>
+                  
                 </div>
                 </div>
                 
@@ -115,7 +113,7 @@ input[type="checkbox"] {
   font-size: 15px;
   background-color: #3476d8;
   color: #ffffff;
-  font-family: "GmarketSansLight";
+ 
   border-radius: 5px;
   text-align: center;
   margin-bottom: 10px;
@@ -137,28 +135,6 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-
-.kakao {
-  background: #ffc20f;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-}
-
-.naver {
-  background: #1ec800;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-}
-
-.google {
-    background: #e6e6e6;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-}
-
 .check {
   font-family: "GmarketSansLight";
   font-size: 15px;
@@ -170,6 +146,10 @@ input[type="checkbox"] {
   color: #252525;
   margin-right: 10px;
   font-family: "GmarketSansLight";
+}
+
+.checklink > span {
+  color: #707070;
 }
 
 .simplelogin dt > span {
@@ -200,14 +180,33 @@ input[type="checkbox"] {
     background: #d9d9d9
 }
 
+.kakao {
+  background: #ffc20f;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.naver {
+  background: #1ec800;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.google {
+    background: #e6e6e6;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
 .snsitem {
     padding: 15px;
     margin-bottom:-10px;
 }
 
-.checklink > span {
-  color: #707070;
-}
+
 
 
 

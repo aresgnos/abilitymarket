@@ -8,8 +8,11 @@
         <input type="text" required />
         <span></span>
         <label>아이디</label>
+        <ion-icon name="checkmark-outline" class="valid"></ion-icon>
+        <ion-icon name="close-outline" class="valid"></ion-icon>
       </div>
-
+      <small>아이디를 확인해주십시오.</small>
+      
       <div class="textbox">
         <input type="password" required />
         <span></span>
@@ -100,6 +103,7 @@ export default {};
   position: relative;
   border-bottom: 1px solid #afafaf;
   margin-bottom: 20px;
+  align-items: center;
 }
 
 .textbox > input {
@@ -148,6 +152,22 @@ font-family: "GmarketSansMedium";
 .textbox input:focus ~ span::before,
 .textbox input:valid ~ span::before {
   width: 100%;
+}
+
+/* valid */
+
+.valid {
+  font-size: 30px;
+  left:90%;
+}
+.textbox .valid {
+  position:absolute;
+}
+
+.textbox small {
+  position : absolute;
+  margin-left:10px;
+
 }
 
 /* 로그인 버튼 */

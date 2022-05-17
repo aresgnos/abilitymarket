@@ -17,6 +17,7 @@
 
         <v-row>
           <v-col>
+            <header>
             <div class="d-flex mb-6">
               <div class="logo">
                 <a href="#"><v-img src="./assets/images/logo.jpg"></v-img></a>
@@ -53,6 +54,7 @@
                 </ul>
               </div>
             </div>
+            </header>
           </v-col>
         </v-row>
 
@@ -79,10 +81,12 @@
 
 <script>
 export default {
-  data: () => ({
-    //
-  }),
-};
+   setup () {
+    
+    return {}
+   }
+}
+
 </script>
 
 <style scoped>

@@ -1,11 +1,16 @@
 <template>
 
-  <div class="joincontainer">
-   
-    <div class="logo">
-      <v-img src="../assets/images/logo.jpg" style="width: 127px" />
-    </div>
+    <div class="joincontainer">
 
+    <div class="joinaside">
+      <div class="logo" >
+      <v-img src="../assets/images/logo_image3.jpg" style="width:370px;margin-top:180px;margin-right:120px;"/>
+    </div>
+    </div>
+    
+      <div class="joininfo">
+        <h2>회원가입</h2>
+  
     <div class="joinbox" style="margin-top:10px;">
       <div class="textbox">
         <input type="text" required />
@@ -76,6 +81,7 @@
     <button class="btn_next">다음으로</button></router-link>
     </div>
     </div>
+    </div>
   
   
 </template>
@@ -86,21 +92,32 @@ export default {};
 
 <style lang="css" scoped>
 
-.joincontainer {
-  font-family: "GmarketSansLight";
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%);
+h2 {
+  margin : 0 auto;
+  color: #3476d8;
+  margin-bottom: 15px;
 }
 
-.logo {
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+.joincontainer {
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+
+.joinaside {
+  display: flex;
+  width:400px;
+}
+
+.joininfo {
+  font-family: "GmarketSansLight";
+  display: flex;
+  flex-direction: column;
+  padding:20px;
+  
+}
+
 
 .textbox {
   margin: 0 auto;

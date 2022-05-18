@@ -39,13 +39,13 @@
 
               <div class="item" :class="'ml-auto'">
                 <ul class="menu">
-                  <router-link to="/sell">
+                 
                   <li><a href="#">나의&nbsp;능력</a></li>
-                  </router-link>
+           
 
-                  <router-link to="/buy">
+               
                   <li style="margin-left:30px;"><a href="#">당신의&nbsp;능력</a></li>
-                  </router-link>
+ 
 
                   <li><a href="#">고객센터</a></li>
                   <li><a href="#">알림</a></li>

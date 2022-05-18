@@ -5,10 +5,11 @@ import { loadFonts } from './plugins/webfontloader'
 import LoadScript from 'vue-plugin-load-script';
  
   
-//router 설정
+// router 설정
 import routes from './routes/index.js';
 
-
+// veevalidate 설정
+import VeeVallidator from "vee-validate"
 
 
 loadFonts()
@@ -21,3 +22,4 @@ app.use(vuetify);
 app.use(routes);
 app.mount('#app')
 app.use(LoadScript);
+app.use(VeeVallidator)
